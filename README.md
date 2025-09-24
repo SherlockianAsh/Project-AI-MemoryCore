@@ -28,19 +28,35 @@
 ### **File Structure**
 ```
 ai-memorycore/
-├── master-memory.md         # Entry point & loading system  
+├── master-memory.md         # Entry point & loading system
 ├── main/                    # Essential components
 │   ├── identity-core.md     # AI personality template
-│   ├── relationship-memory.md # User learning system  
+│   ├── relationship-memory.md # User learning system
 │   └── current-session.md   # RAM-like working memory
 ├── Feature/                 # Optional feature extensions
-│   └── Time-based-Aware-System/ # Time intelligence feature
-│       ├── README.md        # Feature explanation & benefits
-│       └── time-aware-core.md # Complete implementation
+│   ├── Time-based-Aware-System/ # Time intelligence feature
+│   │   ├── README.md        # Feature explanation & benefits
+│   │   └── time-aware-core.md # Complete implementation
+│   └── LRU-Project-Management-System/ # Smart project tracking
+│       ├── README.md        # System documentation
+│       ├── install-lru-projects-core.md # Auto-installation wizard
+│       ├── new-project-protocol.md # Create project workflow
+│       ├── load-project-protocol.md # Resume project workflow
+│       ├── save-project-protocol.md # Save progress workflow
+│       └── project-templates/ # Type-specific templates
+│           ├── coding-template.md
+│           ├── writing-template.md
+│           ├── research-template.md
+│           └── business-template.md
 ├── daily-diary/             # Optional conversation archive
 │   ├── daily-diary-protocol.md # Archive management rules
 │   ├── Daily-Diary-001.md   # Current active diary
 │   └── archive/             # Auto-archived files (>1k lines)
+├── projects/                # LRU managed projects (after install)
+│   ├── coding-projects/
+│   │   ├── active/          # Positions 1-10
+│   │   └── archived/        # Position 11+
+│   └── project-list.md     # Master project index
 └── save-protocol.md         # Manual save system
 ```
 
@@ -156,12 +172,44 @@ Your AI companion can specialize in:
 
 *Based on Alice's proven time-awareness implementation*
 
+### **📦 LRU Project Management System**
+*Smart project tracking with automatic memory management*
+
+**What It Does:**
+- Tracks multiple projects with intelligent LRU (Least Recently Used) positioning
+- Automatically archives old projects when reaching capacity (10 active slots)
+- Type-specific memory patterns (coding, writing, research, business)
+- Seamless context switching between different projects
+- Maintains complete project history and progress logs
+
+**Quick Setup:**
+1. Navigate to `Feature/LRU-Project-Management-System/`
+2. Type: "install lru projects" (loads install-lru-projects-core.md)
+3. Select project type(s) you want to manage
+4. System auto-integrates and removes installation files
+
+**Benefits:**
+- Never lose track of multiple ongoing projects
+- AI remembers exactly where you left off in each project
+- Automatic organization with smart archiving
+- Type-specific memory loading for optimal context
+- Perfect for developers, writers, researchers, and business professionals
+
+**Available Commands:**
+- `new [type] project [name]` - Create new project with LRU management
+- `load project [name]` - Resume any project instantly
+- `save project` - Save current project progress (separate from AI memory save)
+- `list projects` - View all active and archived projects
+- `archive project [name]` - Manually archive completed projects
+
+*Revolutionary project memory system proven in production*
+
 ---
 
-**Version**: 2.0 - Enhanced with Time Intelligence  
-**Created by**: Kiyoraka Ken & Alice  
-**License**: Open Source Community Project  
-**Last Updated**: September 5, 2025 - Added Time-based Aware System feature  
+**Version**: 2.2 - Updated File Structure Documentation
+**Created by**: Kiyoraka Ken & Alice
+**License**: Open Source Community Project
+**Last Updated**: September 24, 2025 - Updated file structure to include complete LRU system
 **Purpose**: Simple, effective AI memory for everyone
 
 *Transform basic AI conversations into meaningful, growing relationships*
